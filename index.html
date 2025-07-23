@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <h1>Isha Sharma</h1>
+    </div>
+    <div class="navbar-toggle" id="navbarToggle">&#9776</div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="image-container">
+        <img src="images/isha.jpg" alt="Profile Picture" />
+      </div>
+      <div class="text-container">
+        <h3 class="about-heading">About Me</h3>
+        <p class="About">
+          Hi, I’m Isha Sharma, a web developer and the class representative (CR) of my batch. I’ve always believed in balancing responsibilities, whether it’s leading my class or writing clean, functional code. As a CR, I’ve handled a range of tasks from coordinating class communications to managing academic updates, helping create a smooth flow between students and faculty.
+        </p>
+        <h3 class="what-i-do-heading">What I Do</h3>
+        <p class="what-i-do">
+         I started web development with a simple curiosity — how do websites work? Over time, it turned into a deeper interest. I began learning HTML, CSS, and JavaScript, and gradually moved on to frameworks and more structured projects. Now, I focus on building responsive, user-friendly websites that are clean, functional, and easy to maintain.
+        </p>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <h2 class="tech-stack-heading">Tech Stack</h2>
+      <div class="tech-stack-list">
+        <img class="tool" src="images/html2.png" alt="HTML5">
+        <img class="tool" src="images/css3.svg" alt="CSS3">
+        <img class="tool" src="images/js.svg" alt="JavaScript">
+        <img class="tool" src="images/react.png" alt="ReactJS">
+        <img class="tool" src="images/mongodb.svg" alt="MongoDB">
+        <img class="tool" src="images/node-js.svg" alt="NodeJS">
+        <!-- Optional: duplicate for looping effect -->
+        <img class="tool" src="images/html2.png" alt="HTML5">
+        <img class="tool" src="images/css3.svg" alt="CSS3">
+        <img class="tool" src="images/js.svg" alt="JavaScript">
+        <img class="tool" src="images/react.png" alt="ReactJS">
+        <img class="tool" src="images/mongodb.svg" alt="MongoDB">
+        <img class="tool" src="images/node-js.svg" alt="NodeJS">
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById("navbarToggle");
+    const nav = document.querySelector(".navbar");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
