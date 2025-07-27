@@ -244,6 +244,7 @@ header {
 
   .tech-stack {
     max-width: 100%;
+    padding-bottom: 20px;
   }
 
   .tech-stack-list {
